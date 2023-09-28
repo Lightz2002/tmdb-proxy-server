@@ -18,8 +18,8 @@ app.use(cors(corsOptions));
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
-app.use("/api/movies", movieRoutes);
-app.use("/api/genres", genreRoutes);
+app.use("/api/movie", movieRoutes);
+app.use("/api/genre", genreRoutes);
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port} test`);
