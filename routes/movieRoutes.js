@@ -4,12 +4,11 @@ const { token } = require("../utils");
 const router = express.Router();
 
 // Define a route to proxy requests to TMDb API
-router.get("/popular", async (req, res) => {
-  const { language, page } = req.query;
+router.get("/trending", async (req, res) => {
   try {
     // Forward the request to TMDb API
     const response = await axios.get(
-      `https://api.themoviedb.org/3/movie/popular?language=${language}&page=${page}`,
+      `https://api.themoviedb.org/3/trending/movie/week`,
       {
         headers: {
           Authorization: token,
