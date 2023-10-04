@@ -5,7 +5,7 @@ const genreRoutes = require("./routes/genreRoutes");
 const bodyParser = require("body-parser");
 
 const app = express();
-const port = process.env.PORT || 3030;
+const port = process.env.PORT || 3000;
 
 // Enable CORS for your frontend origin (e.g., http://localhost:8080)
 // const allowedOrigins = ['http://127.0.0.1:5173', 'http://localhost:8080', 'https://ryan-react-movie-app.netlify.app'];
